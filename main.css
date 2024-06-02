@@ -1,0 +1,147 @@
+/* main.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    /* Light gray background */
+    color: #343a40;
+    /* Dark gray text color */
+    line-height: 1.6;
+    /* Improved line height for better readability */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    /* Center align container */
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+.card {
+    background-color: #ffffff;
+    /* White card background */
+    border-radius: 20px;
+    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    padding: 20px;
+    /* Decreased padding for result cards */
+    margin-bottom: 20px;
+    /* Decreased margin */
+}
+
+h1 {
+    font-size: 24px;
+    /* Larger heading size */
+    margin-bottom: 20px;
+    /* Increased margin */
+    text-align: center;
+    color: #343a40;
+    /* Dark gray heading color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Decreased margin */
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+    color: #495057;
+}
+
+.form-control:focus {
+    border-color: #f39c12;
+    /* Orange border color on focus */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Blue primary button color */
+    color: #ffffff;
+    /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Lift button on hover */
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    /* Green secondary button color */
+    color: #ffffff;
+    /* White text color */
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    transform: translateY(-2px);
+    /* Lift button on hover */
+}
+
+.logout-container {
+    text-align: right;
+    margin-bottom: 20px;
+    /* Decreased margin */
+}
+
+.search-input {
+    width: calc(100% - 48px);
+    /* Adjust input width */
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #495057;
+    margin-right: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Evenly distribute cards */
+}
+
+.movie-card {
+    width: calc(50% - 20px);
+    /* Adjusted width for better spacing on smaller screens */
+}
+
+@media screen and (min-width: 768px) {
+    .movie-card {
+        width: calc(33.33% - 20px);
+        /* Adjusted width for better spacing on larger screens */
+    }
+}
