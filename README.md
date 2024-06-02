@@ -1,0 +1,2 @@
+# Project
+static website
